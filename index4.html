@@ -3895,20 +3895,40 @@ if (reversed == null) { reversed = false; }
 		var _this = this;
 		/*메뉴 네비게이션*/
 		_this.listen_btn.on('click', function () {
-			window.open('index.html', '_self');
+			//window.open('index.html', '_self');
 			_this.play_btn.visible = true;
+			_this.gotoAndStop(0);
+			var parent = window.parent;
+			if(parent) {
+				parent.swapContent("index1.html");
+			}
 		});
 		_this.expert_btn.on('click', function () {
-			window.open('index2.html', '_self');
+			//window.open('index2.html', '_self');
 			_this.play_btn.visible = true;
+			_this.gotoAndStop(0);
+			var parent = window.parent;
+			if(parent) {
+				parent.swapContent("index2.html");
+			}
 		});
 		_this.singAlong_btn.on('click', function () {
-			window.open('index3.html', '_self');
+			//window.open('index3.html', '_self');
 			_this.play_btn.visible = true;
+			_this.gotoAndStop(0);
+			var parent = window.parent;
+			if(parent) {
+				parent.swapContent("index3.html");
+			}
 		});
 		_this.listen2_btn.on('click', function () {
-			window.open('index4.html', '_self');
+			//window.open('index4.html', '_self');
 			_this.play_btn.visible = true;
+			_this.gotoAndStop(0);
+			var parent = window.parent;
+			if(parent) {
+				parent.swapContent("index4.html");
+			}
 		});
 		/*플레이컨트롤*/
 		_this.play_btn.on('click', function () {
