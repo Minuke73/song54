@@ -60,9 +60,9 @@
       */
       // 여기에 컨텐츠 넣어주시면 됩니다.
       var souces = [
-        "./index1.html",
-        "./index2.html",
-        "./index3.html",
+        "./sub/index1.html",
+        "./sub/index2.html",
+        "./sub/index3.html",
       ];
 
       var iframeElements = [];
@@ -90,7 +90,7 @@
       function createLoadingElement() {
         var wrapper = document.createElement("div");
         wrapper.id = "loading";
-        wrapper.innerHTML = '<img src="./images/preloader.gif" alt="loading">';
+        wrapper.innerHTML = '<img src="../images/preloader.gif" alt="loading">';
         document.body.appendChild(wrapper);
         return wrapper;
       }
